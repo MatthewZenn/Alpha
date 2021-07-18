@@ -1,0 +1,22 @@
+{
+  "name": "alpha",
+  "version": "1.0.0",
+  "description": "The evolution of Sparky",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MatthewZenn/Alpha.git"
+  },
+  "author": "Matthew Zenn",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MatthewZenn/Alpha/issues"
+  },
+  "homepage": "https://github.com/MatthewZenn/Alpha#readme",
+  "dependencies": {
+    "electron": "^13.1.7"
+  }
+}
