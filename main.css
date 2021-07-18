@@ -1,5 +1,10 @@
 html, body {
     background-color: rgb(26, 26, 26);
+    background-image: url(Static/background.svg);
+    background-repeat:no-repeat;
+    background-position-x: center;
+    background-position-y: 200px;
+    min-height: 50%;
 }
 
 * {
@@ -68,15 +73,15 @@ header {
     top: 85px;
     margin-left: 10px;
     color: rgb(70, 70, 70);
-    font-size: 25pt;
+    font-size: 30pt;
 }
 
 .link3 {
     position: relative;
-    top: 110px;
+    top: 105px;
     margin-left: 10px;
     color: rgb(70, 70, 70);
-    font-size: 25pt;
+    font-size: 30pt;
 }
 
 .link4 {
@@ -87,7 +92,45 @@ header {
     font-size: 30pt;
 }
 
-#link:hover {
+.link1:hover {
+    background: -webkit-linear-gradient(#66C1AE, #00999B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link2:hover {
+    background: -webkit-linear-gradient(#66C1AE, #00999B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link3:hover {
+    background: -webkit-linear-gradient(#66C1AE, #00999B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.link4:hover {
+    background: -webkit-linear-gradient(#66C1AE, #00999B);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#console {
+    position: absolute;
+    resize: none;
+    height: 665px;
+    top: 55px;
+    width: 1200px;
+    left: 65px;
+    border: none;
+    background-color: transparent;
     color: white;
-    text-shadow: 0 0 10px #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    font-size: 14pt;
 }
