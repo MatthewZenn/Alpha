@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/MatthewZenn/Alpha#readme",
   "dependencies": {
-    "electron": "^13.1.7"
+    "electron": "^13.1.7",
+    "platform": "^1.3.6",
+    "showdown": "^1.9.1",
+    "xterm": "^4.13.0",
+    "xterm-addon-web-links": "^0.4.0"
   }
 }

@@ -18,7 +18,8 @@ header {
     color: 	gray;
     position: relative;
     float: right;
-    font-size: 25pt;
+    font-size: 30pt;
+    font-family:'Times New Roman', Times, serif;
     font-weight: 900;
     margin-right: 15px;
     margin-top: 5px;
@@ -27,6 +28,7 @@ header {
 .exit:hover {
     cursor: pointer;
     color: 	#ff2352;
+    text-shadow: 0 0 10px #d11f46
 }
 
 .logo {
@@ -87,4 +89,5 @@ header {
 
 #link:hover {
     color: white;
+    text-shadow: 0 0 10px #ffffff;
 }
