@@ -2,6 +2,10 @@ const electron = require('electron');
 const url = require('url');
 const path = require('path');
 
+var nodeConsole = require('console');
+var myConsole = new nodeConsole.Console(process.stdout, process.stderr);
+myConsole.log('Hi:)');
+
 const {app, BrowserWindow, Menu} = electron;
 Menu.setApplicationMenu(null);
 
