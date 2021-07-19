@@ -123,14 +123,29 @@ header {
 #console {
     position: absolute;
     resize: none;
+    height: 25px;
+    top: 50px;
+    width: 1220px;
+    left: 60px;
+    border: none;
+    background-color: rgb(20, 20, 20);
+    color: #ffffff;
+    font-family: 'Courier New', Courier, monospace;
+    outline: none;
+    font-size: 16pt;
+}
+
+#info {
+    position: absolute;
+    resize: none;
     height: 665px;
-    top: 55px;
-    width: 1200px;
-    left: 65px;
+    top: 50px;
+    width: 1220px;
+    left: 60px;
     border: none;
     background-color: transparent;
-    color: white;
-    font-family: 'Courier New', Courier, monospace;
+    color: #555555;
+    font-family: Arial, Helvetica, sans-serif;
     outline: none;
     font-size: 16pt;
 }

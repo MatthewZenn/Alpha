@@ -1,17 +1,8 @@
 var platform = require('platform');
-const shell = require('electron').shell;
-const link = document.querySelector('link4');
-const url = link.getAttribute('href');
-
-link.addEventListener('click', function (e) {
-  e.preventDefault()
-  shell.openExternal(url)
-});
+const { shell } = require('@electron/remote');
 
 function press(event) {
   if (event.keyCode == 13 && !event.shiftKey) {
-      
-      //Stops enter from creating a new line
       event.preventDefault(); 
       submitForm();
       return true;
@@ -29,3 +20,14 @@ function press(event) {
       document.getElementById('console').value = '> ';
   }
 }
+
+function site() {
+  shell.openExternal('https://github.com/MatthewZenn/Alpha');
+}
+
+var reader = new FileReader();
+reader.onload = function (e) {
+    var textArea = document.getElementById("info");
+    textArea.value = e.target.result;
+};
+reader.readAsText('C:\Users\spygu\AppData\Local\Temp\out.txt');
