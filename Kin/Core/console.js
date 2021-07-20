@@ -1,5 +1,8 @@
 //document.getElementById('output').value = document.getElementById('console').value;
 const Kennel = require("./Kin/Core/Kennel.js");
+const os = require('os');
+const fs = require('fs');
+const { shell } = require('@electron/remote');
 
 var sleep = function (ms) {
   let now = Date.now(), end = now + ms;
@@ -30,15 +33,20 @@ function press(event) {
 
 function commands() {
     var text = document.getElementById('console').value;
+    var user = os.userInfo().username;
     
     if (text == '> cls') {
       document.getElementById('output').value = '';
     }
     else if (text == '> sparky'){
-      document.getElementById('output').value = document.getElementById('console').value +"\nLoading Sparky...";
       shell.openPath(Kennel.sparkyPath);
-      sleep(5000)
-      shell.openPath('C:\\Users\\spygu\\AppData\\Local\\Temp\\out.txt');
+      sleep(2000)
+      var data = fs.readFileSync('C:\\Users\\'+user+'\\AppData\\Local\\Temp\\out.txt', 'utf8');
+      document.getElementById('output').value = data;
+    }
+    else if (text == '> help'){
+      shell.openExternal('https://github.com/MatthewZenn/Alpha');
+      document.getElementById('output').value = document.getElementById('console').value;
     }
     else {
       document.getElementById('output').value = document.getElementById('console').value;

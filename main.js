@@ -13,7 +13,7 @@ Menu.setApplicationMenu(null);
 let mainWindow;
 
 app.on('ready', function(){
-    mainWindow = new BrowserWindow({width: 1280, height: 720, resizable: false, frame: false, webPreferences: {
+    mainWindow = new BrowserWindow({width: 1200, height: 720, resizable: false, frame: false, webPreferences: {
         nodeIntegration: true,
         contextIsolation: false,
         enableRemoteModule: true

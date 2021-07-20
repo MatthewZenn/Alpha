@@ -49,39 +49,14 @@ header {
     margin-top: 25px;
 }
 
-#panel {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
-    width: 60px;
-    height: 100%;
-    background-color: rgb(30, 30, 30);
-    z-index: -1;
-}
-
 .link1 {
-    position: relative;
-    top: 65px;
+    position: absolute;
+    left: 130px;
+    top: 15px;
     margin-left: 10px;
     color: rgb(70, 70, 70);
-    font-size: 25pt;
-}
-
-.link2 {
-    position: relative;
-    top: 85px;
-    margin-left: 10px;
-    color: rgb(70, 70, 70);
-    font-size: 30pt;
-}
-
-.link3 {
-    position: relative;
-    top: 105px;
-    margin-left: 10px;
-    color: rgb(70, 70, 70);
-    font-size: 30pt;
+    font-size: 20pt;
+    z-index: 15;
 }
 
 .link1:hover {
@@ -89,20 +64,7 @@ header {
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
-}
-
-.link2:hover {
-    background: -webkit-linear-gradient(#66C1AE, #00999B);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.link3:hover {
-    background: -webkit-linear-gradient(#66C1AE, #00999B);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
+    cursor: pointer;
 }
 
 #console {
@@ -110,8 +72,8 @@ header {
     resize: none;
     height: 25px;
     bottom: 0px;
-    width: 1220px;
-    left: 60px;
+    width: 1200px;
+    left: 0px;
     border: none;
     background-color: rgb(20, 20, 20);
     color: #ffffff;
@@ -120,28 +82,13 @@ header {
     font-size: 16pt;
 }
 
-#info {
-    position: absolute;
-    resize: none;
-    height: 665px;
-    top: 50px;
-    width: 1220px;
-    left: 60px;
-    border: none;
-    background-color: transparent;
-    color: #555555;
-    font-family: Arial, Helvetica, sans-serif;
-    outline: none;
-    font-size: 16pt;
-}
-
 #output {
     position: absolute;
     resize: none;
-    height: 640px;
-    top: 50px;
-    width: 1220px;
-    left: 60px;
+    height: 630px;
+    top: 60px;
+    width: 1190px;
+    left: 10px;
     border: none;
     background-color: transparent;
     color: #555555;
