@@ -42,11 +42,34 @@ function commands() {
       shell.openPath(Kennel.sparkyPath);
       sleep(2000)
       var data = fs.readFileSync('C:\\Users\\'+user+'\\AppData\\Local\\Temp\\out.txt', 'utf8');
-      document.getElementById('output').value = data;
+      document.getElementById('output').value = document.getElementById('console').value+'\n'+data;
     }
     else if (text == '> help'){
       shell.openExternal('https://github.com/MatthewZenn/Alpha');
       document.getElementById('output').value = document.getElementById('console').value;
+    }
+    else if (text == '> theme --light'){
+      document.documentElement.setAttribute('data-theme', 'light')
+      document.getElementById('output').value = document.getElementById('console').value;
+    }
+    else if (text == '> theme --dark'){
+      document.documentElement.setAttribute('data-theme', 'dark')
+      document.getElementById('output').value = document.getElementById('console').value;
+    }
+    else if (text == '> whoami'){
+      document.getElementById('output').value = document.getElementById('console').value+'\n'+user;
+    }
+    else if (text == '> ls'){
+      let filenames = fs.readdirSync(Kennel.kinPath);
+      filenames.forEach((file) => {
+        document.getElementById('output').value = ("File:", file);
+    });
+    }
+    else if (text == '> hello there'){
+      document.getElementById('output').value = document.getElementById('console').value+'\n'+'General Kenobi!';
+    }
+    else if (text == '> hello'){
+      document.getElementById('output').value = document.getElementById('console').value+'\n'+'Hi:)';
     }
     else {
       document.getElementById('output').value = document.getElementById('console').value;

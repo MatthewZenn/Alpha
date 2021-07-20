@@ -1,6 +1,22 @@
+:root {
+    --background-color: rgb(26, 26, 26);
+    --header-color: rgb(30, 30, 30);
+    --text-console: #fff;
+    --back-console: rgb(20, 20, 20);
+    --image: url(Static/background.svg);
+}
+
+[data-theme="light"] {
+    --background-color: rgb(212, 212, 212);
+    --header-color: rgb(255, 255, 255);
+    --text-console: rgb(0, 0, 0);
+    --back-console: rgb(228, 228, 228);
+    --image: url(Static/background_light.svg);
+}
+
 html, body {
-    background-color: rgb(26, 26, 26);
-    background-image: url(Static/background.svg);
+    background-color: var(--background-color);
+    background-image: var(--image);
     background-repeat:no-repeat;
     background-position-x: center;
     background-position-y: 200px;
@@ -14,7 +30,7 @@ html, body {
 
 header {
     -webkit-app-region: drag;
-    background-color: rgb(30, 30, 30);
+    background-color: var(--header-color);
     height: 50px;
 }
 
@@ -75,8 +91,8 @@ header {
     width: 1200px;
     left: 0px;
     border: none;
-    background-color: rgb(20, 20, 20);
-    color: #ffffff;
+    background-color: var(--back-console);
+    color: var(--text-console);
     font-family: 'Courier New', Courier, monospace;
     outline: none;
     font-size: 16pt;
