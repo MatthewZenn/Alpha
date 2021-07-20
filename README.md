@@ -8,7 +8,7 @@ Alpha is a graphical interface and terminal app built on top of Sparky. At it's 
 
 # Setup
 
-In order for Alpha to function correctly, it relies on access to ```Sparky.vbs``` and ```Kennel.js```. This latter file holds onto the paths for Sparky and the ```Kin``` directry. In it's current from, these variables must be updated to the paths of the current computer.
+In order for Alpha to function correctly, it relies on access to ```Sparky.vbs``` and ```Kennel.js```. This latter file holds on to the paths for Sparky and the ```Kin``` directry. In it's current form, these variables must be updated to the paths of the current computer.
 # commands
 
 - ```sparky``` runs the Sparky script and outputs to the terminal
