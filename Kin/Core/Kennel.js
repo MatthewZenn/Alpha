@@ -1,0 +1,1 @@
+exports.sparkyPath = 'D:\\spygu\\Documents\\GitHub\\Alpha\\Kin\\Core\\Sparky.vbs';

@@ -13,7 +13,12 @@ Menu.setApplicationMenu(null);
 let mainWindow;
 
 app.on('ready', function(){
-    mainWindow = new BrowserWindow({width: 1280, height: 720, resizable: false, frame: false, icon: "Static/Icon.ico"});
+    mainWindow = new BrowserWindow({width: 1280, height: 720, resizable: false, frame: false, webPreferences: {
+        nodeIntegration: true,
+        contextIsolation: false,
+        enableRemoteModule: true
+    }, icon: "Static/Icon.ico"});
+    mainWindow.webContents.openDevTools()
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'mainWindow.html'),
         protocol: 'file:',
