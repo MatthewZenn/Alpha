@@ -18,7 +18,6 @@ app.on('ready', function(){
         contextIsolation: false,
         enableRemoteModule: true
     }, icon: "Static/Icon.ico"});
-    mainWindow.webContents.openDevTools()
     mainWindow.loadURL(url.format({
         pathname: path.join(__dirname, 'mainWindow.html'),
         protocol: 'file:',
