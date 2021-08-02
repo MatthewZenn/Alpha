@@ -1,6 +1,7 @@
 const electron = require('electron');
 const url = require('url');
 const path = require('path');
+const { ipcMain } = require('electron');
 require('@electron/remote/main').initialize();
 
 var nodeConsole = require('console');
@@ -24,3 +25,8 @@ app.on('ready', function(){
         slashes: true
     }));
 });
+
+ipcMain.on('minimize', () => {
+    mainWindow.minimize();
+    //win.hide();
+  })

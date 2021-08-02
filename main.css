@@ -49,7 +49,24 @@ header {
 .exit:hover {
     cursor: pointer;
     color: 	#ff2352;
-    text-shadow: 0 0 10px #d11f46
+    text-shadow: 0 0 10px #d11f46;
+}
+
+.minus {
+    -webkit-app-region: no-drag;
+    color: 	gray;
+    position: relative;
+    float: right;
+    font-size: 30pt;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: 900;
+    margin-right: 15px;
+    margin-top: 5px;
+}
+
+.minus:hover {
+    cursor: pointer;
+    color: 	#ffffff;
 }
 
 .logo {
